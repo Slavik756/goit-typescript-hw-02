@@ -1,0 +1,21 @@
+.form {
+    margin-inline: auto;
+    display: flex;
+    gap: 20px;
+    width: 400px;
+    padding-left: 40px;
+  }
+  
+  .inp {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    background-color: transparent;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+  }

@@ -1,0 +1,15 @@
+.list {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 25px;
+  }
+  
+  img {
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height: 653px;
+    width: 400px;
+  }
