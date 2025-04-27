@@ -1,5 +1,5 @@
 import { BarLoader } from "react-spinners";
-import css from "./loader.module.css";
+import css from "./Loader.module.css";
 
 type Props = { loading: boolean };
 
