@@ -1,11 +1,11 @@
-import { Image } from "../ImageGallery/ImageGallery";
+import { UnsplashPhoto } from "../ImageGallery/ImageGallery";
 
 type Props = {
-    image : Image;
+    photo: UnsplashPhoto; 
 };
 
 export default function imageCard({
-    image: {
+    photo: {
         alt_description,
         urls: {small}
     },

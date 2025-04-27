@@ -1,7 +1,7 @@
-import ImageCard from "../ImageCard/ImageCard";
+import UnsplashPhotoCard from "../ImageCard/ImageCard";
 import css from "./ImageGallery.module.css";
 
-export type Image = {
+export type UnsplashPhoto = {
   id: string;
   alt_description: string;
   urls: {
@@ -10,17 +10,17 @@ export type Image = {
 };
 
 type Props = {
-    images: Image[];
-  onClick: (image: Image) => void;
+  photos: UnsplashPhoto[];
+  onClick: (photo: UnsplashPhoto) => void;
 };
 
-export default function ImageGallery({ images, onClick }: Props) {
+export default function ImageGallery({ photos, onClick }: Props) {
   return (
     <>
       <ul className={css.list}>
-        {images.map((image) => (
-          <li key={image.id} onClick={() => onClick(image)}>
-            <ImageCard image={image} />
+        {photos.map((photo) => (
+          <li key={photo.id} onClick={() => onClick(photo)}>
+            <UnsplashPhotoCard photo={photo} />
           </li>
         ))}
       </ul>

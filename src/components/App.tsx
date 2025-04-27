@@ -58,7 +58,7 @@ const App: React.FC = () => {
       {error ? (
         <ErrorMessage />
       ) : (
-        <ImageGallery images={fotos} onClick={openModal} />
+        <ImageGallery photos={fotos} onClick={openModal} />
       )}
       {loading && <Loader loading={loading} />}
 
