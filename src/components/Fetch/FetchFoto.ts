@@ -44,7 +44,7 @@ export const fetchFotoWithTopic = async (
     per_page: 12,
     page,
   };
-  const response = await axios.get("/search/photos", { params });
+  const response = await axios.get<UnsplashResponse>("/search/photos", { params });
 
   return response.data;
 };

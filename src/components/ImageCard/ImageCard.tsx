@@ -1,10 +1,10 @@
-import { UnsplashPhoto } from "../ImageGallery/ImageGallery";
+import { UnsplashPhoto } from "../Fetch/FetchFoto";
 
 type Props = {
     photo: UnsplashPhoto; 
 };
 
-export default function imageCard({
+export default function ImageCard({
     photo: {
         alt_description,
         urls: {small}
